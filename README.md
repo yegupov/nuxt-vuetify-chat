@@ -1,10 +1,8 @@
 # Nuxt-vuetify-chat
 
-Fullstack chat using Vue.js, Socket.io, Nuxt.js, Express.js and Vuetify. No database is used here. Only text messages are implemented.
+> Fullstack chat using Vue.js, Socket.io, Nuxt.js, Express.js and Vuetify. No database is used here. Only text messages are implemented.
 
 [yegupov.github.io/nuxt-vuetify-chat/](https://yegupov.github.io/nuxt-vuetify-chat/)
-
-> My scrumtrulescent Nuxt.js project
 
 ## Build Setup
 

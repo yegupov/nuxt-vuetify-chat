@@ -26,10 +26,6 @@ class Users {
   }
 }
 
-// Из данного модуля экспортируем ф-цию, возвращающую новый экземпляр класса Users
-// module.exports = function() {
-//   return new Users()
-// }
 module.exports = () => {
   return new Users()
 }

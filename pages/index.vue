@@ -1,7 +1,6 @@
 <template lang="pug">
 	v-layout(column justify-center align-center)
 		v-flex(xs12 sm8)
-			//- v-btn(@click="message") NEW MESSAGE
 			v-card(min-width="400")
 				v-snackbar.popup-message(v-model="snackbar" :timeout="4000" top)
 					span {{ message }}
@@ -65,8 +64,6 @@
 						name: this.name,
 						room: this.room
 					}
-					// Отправка данных по сокетам на сервер
-					// чтобы получить уникальный ID соединения, которым обладает данный пользователь
 					this.$socket.client.emit('userJoined', user, data => {
 						if (typeof data === 'string') {
 							console.error(data);

@@ -44,9 +44,7 @@ export default {
     box-shadow: 0 1px 0 0 rgba(50,50,50,0.3);
     border-radius: 4px;
     background-color: #1976d2;
-    // border-bottom: 1px solid #ccc;
     p {
-      // display: inline-block;
       margin: 0;
       width: 80%;
     }

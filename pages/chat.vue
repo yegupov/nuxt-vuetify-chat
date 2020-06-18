@@ -10,14 +10,6 @@
         )
     .chat-form
       ChatForm
-      //- v-form(ref="form" @submit.prevent="send")
-      //-   v-text-field(
-      //-     v-model="text"
-      //-     label="Message..."
-      //-     outlined
-      //-     :rules="rules"
-      //-     append-icon="mdi-send-circle-outline"
-      //-     )
 </template>
 
 <script>

@@ -1,5 +1,4 @@
 <template lang="pug">
-  //- v-flex(xs12)
   v-form(@submit.prevent="send")
     v-text-field(
       v-model="text"

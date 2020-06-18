@@ -10,8 +10,6 @@
             v-icon(:color="customer.id === user.id ? 'primary' : 'grey'") mdi-account-circle-outline
     v-app-bar(app)
       v-app-bar-nav-icon(@click='drawer = !drawer')
-      //- v-btn(icon @click="exit")
-      //-   v-icon arrow_back
       v-toolbar-title Чат комнаты: {{user.room}}
       v-spacer
       v-btn(
@@ -20,17 +18,6 @@
         title="Выйти"
       ).mx-1
         v-icon mdi-exit-to-app
-    //- v-navigation-drawer(v-model='drawer', absolute, temporary)
-    //-   v-list(nav, dense)
-    //-     v-list-item-group(v-model='group', active-class='deep-purple--text text--accent-4')
-    //-       v-list-item
-    //-         v-list-item-icon
-    //-           v-icon mdi-home
-    //-         v-list-item-title Home
-    //-       v-list-item
-    //-         v-list-item-icon
-    //-           v-icon mdi-account
-    //-         v-list-item-title Account
     v-main
       nuxt
 </template>
@@ -45,7 +32,6 @@ export default {
   methods: {
     ...mapActions(["clearData"]),
     exit() {
-      // Вызываем событие userLeft
       this.$socket.client.emit('userLeft', this.user.id, () => {
         this.$router.push("/?message=leftChat");
         this.clearData();

@@ -4,7 +4,7 @@
 			v-card(min-width="400")
 				v-snackbar.popup-message(v-model="snackbar" :timeout="4000" top)
 					span {{ message }}
-					v-btn.float-right(color="grey darken-2" text @click="snackbar = false") Закрыть
+					v-btn.float-right(color="grey darken-2" @click="snackbar = false") Закрыть
 				v-card-title
 					h1 Nuxt chat
 				v-card-text
